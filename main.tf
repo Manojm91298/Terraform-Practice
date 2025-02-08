@@ -8,3 +8,7 @@ module "ec2_instance" {
   instance_type_value = "t2.micro"
   subnet_id_value = "subnet-0124af1c840041db6"
 }
+
+module "s3_bucket" {
+  source = "./modules/s3_bucket"
+}
